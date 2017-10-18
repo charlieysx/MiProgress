@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cb.miprogress.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@mipmap/pic_bg">
+
+            <cb.miprogress.MiProgress
+                android:id="@+id/miProgress"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_mess"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="2274"
+                    android:textColor="@color/white"
+                    android:textSize="36sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_mess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_step"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.5公里"
+                        android:textColor="#99FFFFFF"
+                        android:textSize="14sp"/>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="#99FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="34千卡 "
+                        android:textColor="#99FFFFFF"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ll_mess"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/watch_logo"/>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_conn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="连接"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E8E8E8"/>
+
+        <EditText
+            android:id="@+id/et_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="输入进度 0 - 360"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColorHint="#999999"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E8E8E8"/>
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="完成"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="我是占位的view，不用理我"/>
+
+    </LinearLayout>
+</cb.miprogress.MyScrollView>
