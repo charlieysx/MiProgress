@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+.settings/org.eclipse.buildship.core.prefs
+.project
+app/.settings/org.eclipse.buildship.core.prefs
